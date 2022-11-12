@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // -------------------------a function to convert Celsius to Fahrenheit------------------------------------------- //
+
+      // function celsiusToFahrenheit(celsius) {
+      //   const fahrenheit = (celsius * 9) / 5 + 32;
+      //   const message = `${celsius}°C is ${fahrenheit}°F `;
+      //   console.log(message);
+      // }
+
+      // const celsiusToFahrenheitExpress = function (celsius) {
+      //   const fahrenheit = (celsius * 9) / 5 + 32;
+      //   const message = `${celsius}°C is ${fahrenheit}°F `;
+      //   console.log(message);
+      // };
+
+      // const celsiusToFahrenheitArrow = (celsius) => {
+      //   const fahrenheit = (celsius * 9) / 5 + 32;
+      //   const message = `${celsius}°C is ${fahrenheit}°F `;
+      //   console.log(message);
+      // };
+      // celsiusToFahrenheit(50);
+      // celsiusToFahrenheitExpress(10);
+      // celsiusToFahrenheitArrow(60);
+
+      // ------------------------------a function to find the area of a given Rectangle--------------------------------------- //
+
+      // function isNumber(value) {
+      //   if (typeof value === "number") return true;
+      //   else return false;
+      // }
+
+      // function getRectangleArea(length, width) {
+      //   if (isNumber(length) && isNumber(width)) {
+      //     const area = length * width;
+      //     const message = `The area of the rectangle is ${area}`;
+      //     console.log(message);
+      //   } else {
+      //     console.log("Please enter a valid value");
+      //   }
+      // }
+
+      // const getRectangleAreaExpress = function (length, width) {
+      //   if (isNumber(length) && isNumber(width)) {
+      //     const area = length * width;
+      //     const message = `The area of the rectangle is ${area}`;
+      //     console.log(message);
+      //   } else {
+      //     console.log("Please enter a valid value");
+      //   }
+      // };
+
+      // const getRectangleAreaArrow = (length, width) => {
+      //   if (isNumber(length) && isNumber(width)) {
+      //     const area = length * width;
+      //     const message = `The area of the rectangle is ${area}`;
+      //     console.log(message);
+      //   } else {
+      //     console.log("Please enter a valid value");
+      //   }
+      // };
+
+      // getRectangleArea(9, 4);
+      // getRectangleAreaExpress("m", 4);
+      // getRectangleAreaArrow(8, 2);
+
+      // --------------------------------- a function to reverse a number----------------------------------- //
+
+      // function reversedNum(num) {
+      //   return parseFloat(num.toString().split("").reverse().join(""));
+      // }
+
+      // const reversedNumExpress = function (num) {
+      //   return parseFloat(num.toString().split("").reverse().join(""));
+      // };
+      // const reversedNumsArrow = (num) => {
+      //   return parseFloat(num.toString().split("").reverse().join(""));
+      // };
+
+      // console.log(reversedNum(9876654321));
+      // console.log(reversedNumExpress(1234));
+      // console.log(reversedNumsArrow(432));
+
+      // ---------------------------- a function to convert a string into title case---------------------------------------- //
+
+      // function isString(value) {
+      //   if (typeof value === "string") return true;
+      //   else return false;
+      // }
+
+      // function toUpperCase(str) {
+      //   if (isString(str)) {
+      //    let words = str.toLowerCase().split(' ').map(word =>{
+      //     return  word[0].toUpperCase() + word.slice(1, word.length)
+      // }).join(' ');
+
+      // console.log(words);
+
+      //   } else {
+      //     console.log("Please enter a valid value");
+      //   }
+      // }
+
+      // const toUpperCaseExpress = function (str) {
+      //     if (isString(str)) {
+      //    let words = str.toLowerCase().split(' ').map(word =>{
+      //     return  word[0].toUpperCase() + word.slice(1, word.length)
+      // }).join(' ');
+
+      // console.log(words);
+
+      //   } else {
+      //     console.log("Please enter a valid value");
+      //   }
+      // };
+
+      // const toUpperCaseArrow = (str) => {
+      //     if (isString(str)) {
+      //    let words = str.toLowerCase().split(' ').map(word =>{
+      //     return  word[0].toUpperCase() + word.slice(1, word.length)
+      // }).join(' ');
+
+      // console.log(words);
+
+      //   } else {
+      //     console.log("Please enter a valid value");
+      //   }
+      // };
+
+      // toUpperCase("java script rules!");
+      // toUpperCaseExpress("java script rules!");
+      // toUpperCaseArrow("ruby is also not bad!");
+
+      // ---------------------------- a function to find a largest number in array ---------------------------------------- //
+
+      // function findBiggestNumForOf(arr){
+      //   let theBiggest = arr[0]
+      //   for(const num of arr){
+      //     if(num > theBiggest){
+      //       theBiggest = num
+      //     }
+      //   }
+      //   console.log(theBiggest);
+      // }
+
+      // findBiggestNumForOf([3,5,66,81,2])
+
+      // function findBiggestNumAForI(arr){
+      //   let theBiggest = arr[0]
+      //   for(let i = 0; i < arr.length; i += 1){
+      //     if(arr[i] > theBiggest){
+      //       theBiggest = arr[i]
+      //   }}
+      //   console.log(theBiggest);
+      // }
+
+      // findBiggestNumAForI([5,7,77,12])
+
+      // function findBiggestNumForIn(arr){
+      //   let theBiggest = arr[0]
+      //   for(const key in arr){
+
+      //     if(arr[key] > theBiggest){
+      //       theBiggest = arr[key]
+      //     }
+      //   }
+      //   console.log(theBiggest);
+      // }
+
+      // findBiggestNumForIn([2,3,9,11,4])
+
+      // function findBiggestNumForEach(arr){
+      //   let theBiggest = arr[0]
+      // arr.forEach(num => {
+      //   if(num > theBiggest){
+      //     theBiggest = num
+      //   }
+      // })
+      //   console.log(theBiggest);
+      // }
+
+      // findBiggestNumForEach([2,55,6699,1,4])
+
+      // function findBiggestNumWhile(arr) {
+      //   let theBiggest = arr[0];
+      //     let i = 0;
+      //     while (arr.length > i) {
+      //         if (arr[i] > theBiggest) {
+      //             theBiggest = arr[i];
+      //         }
+      //         i += 1;
+      //     }
+      //   console.log(theBiggest);
+
+      //   }
+      //   findBiggestNumWhile([4, 100, 78, 56])
+
+      //   function findBiggestNumDoWhile(arr) {
+      //     let i = arr.length - 1;
+
+      //     let theBiggest = arr[0];
+      //   do {
+      //     if (arr[i] > theBiggest) {
+      //         theBiggest = arr[i];
+      //     }
+      //     i -= 1;
+      // } while (i);
+
+      // console.log(theBiggest);
+      // }
+
+      // findBiggestNumDoWhile([1, 200, 90, 56])
+
+      // // ---------------------------- a function to check if an input string is a palindrome ---------------------------------------- //
+
+      // function checkIfPalindrome(str) {
+      // const string = str.toString()
+      //   const length= string.length;
+
+      //   for (let i = 0; i < length / 2; i += 1) {
+
+      //       if (string[i] !== string[length - 1 - i]) {
+      //           return 'It is not a palindrome';
+      //       }
+      //   }
+      //   return 'It is a palindrome';
+      // }
+
+      // const value = checkIfPalindrome(1228979788971);
+
+      // console.log(value);
+
+      // // ---------------------------- a function to find product of two arrays ---------------------------------------- //
+
+      // function multArr(arr1,arr2){
+      //   const newArr = arr1.map((el,index )=> {
+      // return arr2[index] * el
+      //   })
+      //   return newArr
+      // }
+      // console.log(multArr([3,5,8], [3,2,10]));
+
+      // const multArrExpress = function multArr(arr1,arr2){
+      //   const newArr = arr1.map((el,index )=> {
+      // return arr2[index] * el
+      //   })
+      //   return newArr
+      // }
+      // console.log(multArrExpress([5,44,10], [7,2,10]));
+
+      // const multArrArrow =(arr1,arr2) => {
+      //   const newArr = arr1.map((el,index )=> {
+      // return arr2[index] * el
+      //   })
+      //   return newArr
+      // }
+      // console.log(multArrArrow([1,46,106], [7,2,10]));
+
+      // // ---------------------------- a function to find the number of zeros in 2D Matrix ---------------------------------------- //
+
+      // const mat = [
+      //   [0, 1, 1,0],
+      //   [0, 1, 0,0],
+      //   [1, 0, 0,0],
+      // ];
+
+      // function findZeros(arr) {
+      //   return arr.reduce((prev, array) => {
+      //       return prev + array.reduce((p, item) => (item === 0 ? p + 1 : p), 0);
+      //   }, 0);
+      // }
+
+      // console.log(findZeros(mat));
+
+      //==================================================************* HOME WORK 2 *************===================================================//
+
+      const animals = [
+    { type: 'dog', name: 'max',  owner: "john doe", age: 5, weight: 30, categories: [ 'domestic', 'mammal', 'pet', 'quick' ] },
+    { type: 'cat', name: 'kitty',  owner: "raquel gonzalez", age: 3, weight: 10, categories: [ 'domestic', 'mammal', 'pet', 'quick' ] },
+    { type: 'dog', name: 'rex',  owner: "john cena", age: 1, weight: 20, categories: [ 'domestic', 'mammal', 'pet', 'quick' ] },
+    { type: 'parrot', name: 'polly',  owner: "diego perez", age: 4, weight: 1, categories: [ 'domestic', 'bird', 'pet', 'slow' ] },
+    { type: 'rabbit', name: 'bugs',  owner: "lionel messi", age: 2, weight: 2, categories: [ 'domestic', 'mammal', 'pet', 'slow' ] },
+    { type: 'snake', name: 'kaa',  owner: "cristiano ronaldo", age: 1, weight: 1, categories: [ 'reptile', 'wild', 'slow' ] },
+    { type: 'turtle', name: 'speedy',  owner: "dany dakota", age: 1, weight: 10, categories: [ 'reptile', 'wild', 'slow' ] },
+    { type: 'lion', name: 'simba',  owner: "ray white", age: 2, weight: 50, categories: [ 'wild', 'mammal', 'quick' ] },
+    { type: 'tiger', name: 'shere Khan',  owner: "johnny vidal", age: 3, weight: 45, categories: [ 'wild', 'mammal', 'quick' ] },
+    { type: 'elephant', name: 'dumbo',  owner: "alexander kounde", age: 4, weight: 1000, categories: [ 'wild', 'mammal', 'slow' ] },
+    { type: 'dog', name: 'lucky',  owner: "john doe", age: 5, weight: 30, categories: [ 'domestic', 'mammal', 'pet', 'quick' ] },
+    { type: 'cat', name: 'garfield',  owner: "raquel gonzalez", age: 3, weight: 10, categories: [ 'domestic', 'mammal', 'pet', 'quick' ] },
+    { type: 'dog', name: 'fido',  owner: "john cena", age: 1, weight: 20, categories: [ 'domestic', 'mammal', 'pet', 'quick' ] },
+    { type: 'parrot', name: 'paco',  owner: "ray white", age: 4, weight: 1, categories: [ 'domestic', 'bird', 'pet', 'slow' ] },
+    { type: 'rabbit', name: 'bunny',  owner: "lionel messi", age: 2, weight: 2, categories: [ 'domestic', 'mammal', 'pet', 'slow' ] },
+]
+
+
+      const newAnimals = [...animals];
+
+      //==============================================** 1 - Count the number of attributes **======================================================//
+
+      const countOfAtts = newAnimals.reduce(
+        (acc, animal) => {
+          const category = animal.categories.map((category) => {
+            switch (category) {
+              case "domestic":
+                acc.domestic += 1;
+                break;
+
+              case "mammal":
+                acc.mammal += 1;
+                break;
+
+              case "pet":
+                acc.pet += 1;
+                break;
+
+              case "quick":
+                acc.quick += 1;
+                break;
+
+              case "bird":
+                acc.bird += 1;
+                break;
+
+              case "slow":
+                acc.slow += 1;
+                break;
+
+              case "reptile":
+                acc.reptile += 1;
+                break;
+
+              case "wild":
+                acc.wild += 1;
+                break;
+
+              default:
+                break;
+            }
+          });
+          return acc;
+        },
+        {
+          domestic: 0,
+          mammal: 0,
+          pet: 0,
+          quick: 0,
+          bird: 0,
+          slow: 0,
+          reptile: 0,
+          wild: 0,
+        }
+      );
+
+      // console.log(countOfAtts)
+
+      //==============================================** 2 - Count the number of animals by type **======================================================//
+
+      const types = newAnimals.reduce(
+        (acc, animal) => {
+          const type = animal.type;
+
+          switch (type) {
+            case "dog":
+              acc.dog += 1;
+              break;
+
+            case "cat":
+              acc.cat += 1;
+              break;
+
+            case "rabbit":
+              acc.rabbit += 1;
+              break;
+
+            case "parrot":
+              acc.parrot += 1;
+              break;
+
+            case "snake":
+              acc.snake += 1;
+              break;
+
+            case "turtle":
+              acc.turtle += 1;
+              break;
+
+            case "lion":
+              acc.lion += 1;
+              break;
+
+            case "tiger":
+              acc.tiger += 1;
+              break;
+
+            case "elephant":
+              acc.elephant += 1;
+              break;
+
+            default:
+              break;
+          }
+
+          return acc;
+        },
+        {
+          dog: 0,
+          cat: 0,
+          rabbit: 0,
+          parrot: 0,
+          snake: 0,
+          turtle: 0,
+          lion: 0,
+          tiger: 0,
+          elephant: 0,
+        }
+      );
+
+      // console.log(types)
+
+      //======================** 3 Count the number of animals that are greater than 2 years old and less than 2 years old **=========================//
+
+      const ageOfAnimals = {
+        lessThanTwo: 0,
+        greaterThanTwo: 0,
+      };
+
+      newAnimals.filter((animal) => {
+        animal.age > 2
+          ? (ageOfAnimals.greaterThanTwo += 1)
+          : (ageOfAnimals.lessThanTwo += 1);
+      });
+
+      // console.log(ageOfAnimals);
+
+      //======================** 4 Transport the animals to a new zoo **=========================//
+
+      const arr = [];
+      let arr2 = [null, null, null];
+      let res = 0;
+      for (let i = 0; i < newAnimals.length; i += 1) {
+        arr2[res] = { type: newAnimals[i].type, weight: newAnimals[i].weight };
+        res += 1;
+        if (res === 3 || i === newAnimals.length - 1) {
+          arr.push(arr2);
+          arr2 = [null, null, null];
+          res = 0;
+        }
+      }
+
+      // console.log(arr);
+
+      //======================** 5  Add a year to the age of all the animals **=========================//
+
+      const year = new Date().getFullYear();
+
+      newAnimals.map((animal) => {
+        return (animal.age = {
+          year_of_birth: year - animal.age,
+          how_old: animal.age,
+        });
+      });
+
+      // console.log(newAnimals);
+
+      //======================**  6 Create an array with the names of the owners and transform each name to Title Case **=========================//
+
+      const owner = newAnimals.map((animal) => {
+        const owner2 = animal.owner.split(" ");
+        return (
+          owner2[0][0].toUpperCase() +
+          owner2[0].slice(1, owner2[0].length) +
+          " " +
+          owner2[1][0].toUpperCase() +
+          owner2[1].slice(1, owner2[1].length)
+        );
+      });
+
+      const finalOwner = [...new Set(owner)];
+
+      //   console.log(finalOwner);
+
+      //==============** 7  Create a new array with the owners, inside each owner object, add a new property called animals  **=========================//
+
+      const arrayWithOwner = {};
+
+      newAnimals.forEach((animal) => {
+        const { type, name, owner } = animal;
+
+        if (arrayWithOwner[owner] === undefined) {
+          const owner2 = owner.split(" ");
+          const ownerName =
+            owner2[0][0].toUpperCase() +
+            owner2[0].slice(1, owner2[0].length) +
+            " " +
+            owner2[1][0].toUpperCase() +
+            owner2[1].slice(1, owner2[1].length);
+          arrayWithOwner[owner] = {
+            name: ownerName,
+            animals: [{ type, name }],
+          };
+        } else {
+          arrayWithOwner[owner].animals.push({ type, name });
+        }
+      });
+
+      const finalArray = Object.keys(arrayWithOwner).map((key) => {
+        return arrayWithOwner[key];
+      });
+
+    //   console.log(finalArray);
+
+      //==============**  8 Create a new array with categories, where each category is an object with the name of the category   **=========================//
+
+      const animalsObj = {};
+
+      newAnimals.forEach((animal) => {
+        let { type, age, name, hasOtherCategories, categories } = animal;
+        hasOtherCategories = animal.categories.length > 1 ? true : false;
+        categories.forEach((category) => {
+          if (animalsObj[category] === undefined) {
+            animalsObj[category] = {
+              name:
+                category.split("")[0].toLocaleUpperCase() +
+                category.slice(1, category.length),
+              animals: [{ type, age, name, hasOtherCategories }],
+            };
+          } else {
+            animalsObj[category].animals.push({
+              type,
+              age,
+              name,
+              hasOtherCategories,
+            });
+          }
+        });
+      });
+
+      const keys = Object.keys(animalsObj);
+
+      const finalArr = keys.map((key) => {
+        animalsObj[key].animals.sort((a, b) => {
+          if (a.name > b.name) {
+            return 1;
+          }
+          if (a.name < b.name) {
+            return -1;
+          }
+          return 0;
+        });
+
+        return animalsObj[key];
+      });
+
+    //   console.log(finalArr);
+
+      // ********************************************************************************************************************************************//
+      // ********************************************************************************************************************************************//
+      // ********************************************************************************************************************************************//
+      // ********************************************************************************************************************************************//
+
+      const myArray = [1, 2, 3, 4, 5];
+
+      //=========================================================**  MAP  **==========================================================================//
+
+      function myCustomMap(callback) {
+        const finalArray = [];
+        for (let i = 0; i < this.length; i++) {
+          finalArray.push(callback(this[i], i, this));
+        }
+        return finalArray;
+      }
+
+      myArray.myCustomMap = myCustomMap;
+
+      let result1 = myArray.myCustomMap((element, index, array) => {
+        return element * 2;
+      });
+
+      console.log("MAP :", result1);
+
+      //=========================================================** FILTER  **==========================================================================//
+
+      function myCustomFilter(callback) {
+        const filteredlArray = [];
+        for (let i = 0; i < this.length; i++) {
+          if (callback(this[i])) filteredlArray.push(this[i]);
+        }
+        return filteredlArray;
+      }
+
+      myArray.myCustomFilter = myCustomFilter;
+
+      let result2 = myArray.myCustomFilter((element, index, array) => {
+        return element > 2;
+      });
+
+      console.log("FILTER :", result2);
+
+      //=========================================================** FIND  **==========================================================================//
+
+      function myCustomFind(callback) {
+        let desiredElement = null;
+        for (let i = 0; i < this.length; i++) {
+          if (callback(this[i], i, this)) {
+            desiredElement = this[i];
+          }
+        }
+        return desiredElement;
+      }
+
+      myArray.myCustomFind = myCustomFind;
+
+      let result3 = myArray.myCustomFind((element, index, array) => {
+        if (element === 5) {
+          return element;
+        }
+      });
+
+      console.log("FIND :", result3);
+
+      //=========================================================** REDUCE  **==========================================================================//
+
+      function myCustomReduce(callback) {
+        let acc = 0;
+        for (let i = 0; i < this.length; i++) {
+          callback((acc = acc + this[i]));
+        }
+        return acc;
+      }
+
+      myArray.myCustomReduce = myCustomReduce;
+
+      let result = myArray.myCustomReduce((acc, item) => {
+        acc + item;
+      });
+
+      console.log("REDUCE :", result);
+
+      //=========================================================** EVERY  **==========================================================================//
+
+      const m = [1, 1, 1];
+
+      function myCustomEvery(callback) {
+        for (let i = 0; i < this.length; i++) {
+          if (callback(this[i], i, this)) {
+            continue;
+          } else {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      m.myCustomEvery = myCustomEvery;
+
+      let result4 = m.myCustomEvery((el) => el === 1);
+
+      console.log("EVERY :", result4);
+
+      //=========================================================** SOME  **==========================================================================//
+
+      const r = [33, 4, 15];
+
+      function myCustomSome(callback) {
+        for (let i = 0; i < this.length; i++) {
+          if (callback(this[i], i, this)) {
+            return true;
+          } else {
+            return false;
+          }
+        }
+      }
+
+      r.myCustomSome = myCustomSome;
+
+      let result5 = r.myCustomSome((el) => el === 1);
+
+      console.log("SOME :", result5);
+
+      //=========================================================** INCLUDES  **==========================================================================//
+
+
+      //***** ARRAY *******///
+
+
+      const array = [1, 2, 3, 4, 5, 6, 7, 8];
+
+      const num = 700;
+
+      Array.prototype.myCustomIncludes = function (num) {
+        for (let i = 0; i < this.length; i++) {
+          if (num === this[i]) {
+            return true;
+          }
+        }
+        return false;
+      };
+
+      console.log("INCLUDES ARRAY :", array.myCustomIncludes(num));
+
+
+      //***** STRING *******///
+
+
+      const str = "bkjjkbkjbjk";
+
+      const el = "b";
+
+      Array.prototype.myCustomIncludes = function (el) {
+        for (let i = 0; i < this.length; i++) {
+          if (el === this[i]) {
+            return true;
+          }
+        }
+        return false;
+      };
+
+      console.log("INCLUDES STRING :", array.myCustomIncludes(el));
+
+      //=========================================================** COPY OF THE OBJECT **==========================================================================//
+
+
+
+
+      const deepCopyFunction = (inObject) => {
+        let outObject, value, key;
+
+        if (typeof inObject !== "object" || inObject === null) {
+          return inObject;
+        }
+
+        outObject = Array.isArray(inObject) ? [] : {};
+
+        for (key in inObject) {
+          value = inObject[key];
+
+          outObject[key] = deepCopyFunction(value);
+        }
+
+        return outObject;
+      };
+
+      const originalArray = {
+        newOne: [37, 3700, { hello: "world" }],
+        lokoko: "njnjknj",
+        func: () => {
+          return lokoko;
+        },
+      };
+
+
+      const deepCopiedArray = deepCopyFunction(originalArray);
+
+
+      console.log(deepCopiedArray);
+    </script>
+  </body>
+</html>
